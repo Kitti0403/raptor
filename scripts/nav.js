@@ -2,17 +2,17 @@ document.getElementById("navbar").innerHTML =
 ` 
     <div class="header">
         <div class="nav">
-            <a id="a_logo" href="../index.html">
-                <div class="logo">
+            <a class="logo" href="../index.html">
+                <div>
                     <img id="logo_img" alt="logo" src="../images/rawr.png">
                 </div>
             </a>
 
-             <a href="../pages/timeline.html"><button>
+             <a id="timeline" href="../pages/timeline.html"><button>
                 Timeline
             </button></a>
 
-            <a href="../pages/jurassic.html"><button> 
+            <a id="jurassic" href="../pages/jurassic.html"><button> 
                 Jurassic Park
             </button></a>
 
