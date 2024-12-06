@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.5;
+}
+
+.raptor-info {
+  display: flex;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.info-column {
+  display: flex;
+  flex-direction: column;
+  width: 33.333%;
+}
+
+.development-section,
+.hunting-section,
+.species-section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  padding: 23px 26px;
+  font-size: 32px;
+  font-weight: 500;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.development-section,
+.species-section {
+  background-color: rgb(114, 192, 121);
+}
+
+.hunting-section {
+  background-color: rgb(218, 166, 88);
+}
+
+.section-title,
+.hunting-title,
+.species-title {
+  border-radius: 10px;
+  font-size: 36px;
+  font-weight: 600;
+  padding: 23px 20px;
+  margin-bottom: 20px;
+}
+
+.section-title,
+.species-title,
+.info-box,
+.info-box-secondary,
+.species-info,
+.species-detail {
+  background-color: rgb(188, 252, 194);
+}
+
+.hunting-title,
+.hunting-info,
+.hunting-detail {
+  background-color: rgb(255, 231, 195);
+}
+
+.info-box,
+.hunting-info,
+.species-info,
+.info-box-secondary,
+.hunting-detail,
+.species-detail {
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.raptor-image {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 20px;
+  aspect-ratio: 1.6;
+  object-fit: cover;
+}
+
+@media (max-width: 991px) {
+  .raptor-info {
+      flex-direction: column;
+      gap: 40px;
+  }
+
+  .info-column {
+      width: 100%;
+  }
+
+  .development-section,
+  .hunting-section,
+  .species-section {
+      padding: 20px;
+  }
+
+  .section-title,
+  .hunting-title,
+  .species-title {
+      padding: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+      animation: none !important;
+      transition: none !important;
+  }
+}
