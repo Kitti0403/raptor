@@ -2,7 +2,7 @@ document.getElementById("navbar").innerHTML =
 ` 
     <div class="header">
         <div class="nav">
-            <a href="../pages/index.html">
+            <a href="../index.html">
                 <div class="logo">
                     <img alt="logo" src="images/noe_logo_no-bg.png">
                 </div>
