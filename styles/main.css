@@ -9,24 +9,39 @@ body {
   line-height: 1.5;
 }
 
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto; 
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .raptor-info {
   display: flex;
+  flex-direction: row;
   gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  width: 100%;
   padding: 20px;
+  margin-bottom: 0;
+  align-items: center;
+  height: 100vh;
 }
 
 .info-column {
   display: flex;
   flex-direction: column;
-  width: 33.333%;
+  width: 100%;
+  flex: 1;
 }
 
 .development-section,
 .hunting-section,
 .species-section {
   display: flex;
+  justify-content: space-evenly;
   flex-direction: column;
   text-align: center;
   width: 100%;
@@ -35,6 +50,8 @@ body {
   font-weight: 500;
   height: 100%;
   border-radius: 10px;
+  overflow: auto; /* Ensure content does not overflow */
+  flex: 1; /* Ensure it takes up equal space as the other columns */
 }
 
 .development-section,
@@ -63,6 +80,7 @@ body {
 .species-info,
 .species-detail {
   background-color: rgb(188, 252, 194);
+  text-align: center; /* Center the text */
 }
 
 .hunting-title,
@@ -87,8 +105,53 @@ body {
   height: auto;
   border-radius: 20px;
   margin-top: 20px;
-  aspect-ratio: 1.6;
   object-fit: cover;
+}
+
+.species-detail {
+  position: relative;
+  cursor: pointer;
+  flex: 1;
+}
+
+.species-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  border-radius: 10px;
+  max-width: 60vw; /* Reduced max-width */
+  max-height: 60vh; /* Reduced max-height */
+  scale: 100%; /* Adjusted scale */
+}
+
+.species-detail:focus .species-popup,
+.species-detail:hover .species-popup {
+  display: block;
+}
+
+.popup-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+.species-detail:focus + .overlay,
+.species-detail:hover + .overlay {
+  display: block;
 }
 
 @media (max-width: 991px) {
@@ -112,11 +175,29 @@ body {
   .species-title {
       padding: 15px;
   }
+
+  .species-popup {
+      width: 90vw;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
   * {
       animation: none !important;
       transition: none !important;
+  }
+
+  .skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+  }
+
+  .skip-link:focus {
+    top: 0;
   }
 }
