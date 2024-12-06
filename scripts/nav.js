@@ -2,9 +2,9 @@ document.getElementById("navbar").innerHTML =
 ` 
     <div class="header">
         <div class="nav">
-            <a href="../index.html">
+            <a id="a_logo" href="../index.html">
                 <div class="logo">
-                    <img alt="logo" src="images/noe_logo_no-bg.png">
+                    <img id="logo_img" alt="logo" src="../images/rawr.png">
                 </div>
             </a>
 
@@ -22,7 +22,5 @@ document.getElementById("navbar").innerHTML =
 
 document.getElementById("footer").innerHTML =
 `
-<footer id="footer">
     <p>Annus Kitti  -  Doba Sándor  -  Muzsik Csilla</p>
-</footer>
 `
