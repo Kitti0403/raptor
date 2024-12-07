@@ -8,14 +8,15 @@ document.getElementById("navbar").innerHTML =
                 </div>
             </a>
 
-             <a id="timeline" href="../pages/timeline.html"><button>
+             <a id="timeline" href="../pages/timeline.html"><button class="btn">
                 Timeline
             </button></a>
 
-            <a id="jurassic" href="../pages/jurassic.html"><button> 
+            <a id="jurassic" href="../pages/jurassic.html"><button class="btn"> 
                 Jurassic Park
             </button></a>
 
+            <div id="clock"></div>
         </div>
     </div>
 `;
