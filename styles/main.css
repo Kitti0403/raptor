@@ -7,13 +7,13 @@
 body {
   font-family: 'Inter', sans-serif;
   line-height: 1.5;
+  background: #F1F3C2;
 }
 
 main {
+  scale: 55%;
   width: 100%;
-  max-width: 1200px;
   margin: auto; 
-  min-height: 100vh; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -25,7 +25,6 @@ main {
   gap: 20px;
   width: 100%;
   padding: 20px;
-  margin-bottom: 0;
   align-items: center;
   height: 100vh;
 }
@@ -50,8 +49,7 @@ main {
   font-weight: 500;
   height: 100%;
   border-radius: 10px;
-  overflow: auto; /* Ensure content does not overflow */
-  flex: 1; /* Ensure it takes up equal space as the other columns */
+  flex: 1;
 }
 
 .development-section,
@@ -70,7 +68,7 @@ main {
   font-size: 36px;
   font-weight: 600;
   padding: 23px 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .section-title,
@@ -80,7 +78,7 @@ main {
 .species-info,
 .species-detail {
   background-color: rgb(188, 252, 194);
-  text-align: center; /* Center the text */
+  text-align: center;
 }
 
 .hunting-title,
@@ -122,9 +120,9 @@ main {
   transform: translate(-50%, -50%);
   z-index: 1000;
   border-radius: 10px;
-  max-width: 60vw; /* Reduced max-width */
-  max-height: 60vh; /* Reduced max-height */
-  scale: 100%; /* Adjusted scale */
+  max-width: 60vw; 
+  max-height: 60vh; 
+  scale: 100%; /
 }
 
 .species-detail:focus .species-popup,
