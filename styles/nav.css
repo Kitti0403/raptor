@@ -1,7 +1,7 @@
 .nav{
     background-color: #72C079;
     width: 100%;
-    height: 12dvh;
+    height: 10dvh;
     padding: 1dvh;
     display: flex;
     align-items: center;
@@ -42,8 +42,8 @@
     line-height: normal;
     transition-duration: 0.5s;
 }
-.btn:hover .btn:focus{
-    background-color: #9c72c0 !important;
+.btn:hover, .btn:focus{
+    background-color: #dfc458 !important;
 }  
 
 #timeline, #jurassic{
