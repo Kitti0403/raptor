@@ -1,5 +1,102 @@
+a {
+  text-decoration: none;
+}
+
 body{
-    height: 100dvh;
     font-family: 'Inter', sans-serif;
     line-height: 1.5;
+    height: 100%;
+    width: 100%;
+    margin:0;
 }
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    position: relative;
+    width: 100vw;
+    height: 69.9vh;
+  }
+  
+  .box .group {
+    position: fixed;
+    width: 100vw;
+    height: 69.9vh;
+  }
+  
+  .box .rectangle {
+    position: absolute;
+    width: 66.6vw;
+    height: 69.8vh;
+    background-color: #000000;
+  }
+  
+  .box .overlap {
+    top: 0.2vh;
+    background-color: #72c079;
+    position: absolute;
+    width: 31.7vw;
+    height: 21.1vh;
+    left: 72.5vw;
+    box-shadow: 0px 4px 4px #00000040;
+  }
+  
+  .box .image {
+    left: 1vw;
+    position: absolute;
+    width: 12.3vw;
+    height: 19.1vh;
+    top: 1vh;
+    object-fit: cover;
+  }
+  
+  .box .text-wrapper {
+    position: absolute;
+    width: 18.3vw;
+    top: 1vh;
+    left: 15.8vw;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 2.4vw;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .box .overlap-group {
+    top: 54.7vh;
+    background-color: #daa658;
+    box-shadow: 0px 4px 4px #00000040;
+    position: absolute;
+    width: 31.7vw;
+    height: 21.1vh;
+    left: 72.5vw;
+  }
+  
+  .box .k-k-egy-genetikailag {
+    position: absolute;
+    width: 18.3vw;
+    top: 1vh;
+    left: 15.8vw;
+    font-family: "Inter", Helvetica;
+    font-weight: 400;
+    color: #000000;
+    font-size: 2.4vw;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: normal;
+  }
+  
+  .box .img {
+    left: 1.1vw;
+    position: absolute;
+    width: 12.3vw;
+    height: 19.1vh;
+    top: 1vh;
+    object-fit: cover;
+  }
