@@ -22,8 +22,8 @@ document.getElementById("navbar").innerHTML =
                 <a href="../pages/timeline.html">Timeline</a>
                 <a href="../pages/jurassic.html">Jurassic Park</a>
             </div>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
+            <a href="javascript:void(0);" class="icon" onclick="bugerMenu()">
+                <i class="fa-solid fa-bars"></i>
             </a>
         </div>
     </div>
@@ -33,7 +33,7 @@ document.getElementById("footer").innerHTML =
 `
     <p>Annus Kitti  -  Doba Sándor  -  Muzsik Csilla</p>
 `
-function myFunction() {
+function bugerMenu() {
     var x = document.getElementById("myLinks");
     if (x.style.display === "block") {
       x.style.display = "none";
