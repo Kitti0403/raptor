@@ -1,5 +1,6 @@
 a {
   text-decoration: none;
+  color: inherit;
 }
 
 body{
@@ -11,6 +12,8 @@ body{
 }
 
 main {
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,6 +29,7 @@ main {
     position: fixed;
     width: 1773px;
     height: 699px;
+    display: flex;
   }
   
   .box .rectangle {

@@ -17,6 +17,14 @@ document.getElementById("navbar").innerHTML =
             </button></a>
 
             <div id="clock"></div>
+
+            <div id="myLinks">
+                <a href="../pages/timeline.html">Timeline</a>
+                <a href="../pages/jurassic.html">Jurassic Park</a>
+            </div>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
         </div>
     </div>
 `;
@@ -25,3 +33,11 @@ document.getElementById("footer").innerHTML =
 `
     <p>Annus Kitti  -  Doba Sándor  -  Muzsik Csilla</p>
 `
+function myFunction() {
+    var x = document.getElementById("myLinks");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
